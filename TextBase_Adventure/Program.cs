@@ -1,10 +1,13 @@
-﻿namespace TextBase_Adventure
+﻿using TextBase_Adventure.Utility;
+
+namespace TextBase_Adventure
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            WindowUtillity.SetWindow(190, 45);
+            new MainMenu();
         }
     }
 }
