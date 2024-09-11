@@ -18,6 +18,12 @@ namespace TextBase_Adventure
             _dbContext = new DataContextUtility();
         }
 
+        public Chapter1(Save save)
+        {
+            this._save = save;
+            _dbContext = new DataContextUtility();
+        }
+
         // Start of the story
         public void Start()
         {
@@ -140,7 +146,7 @@ namespace TextBase_Adventure
         }
 
         // Option 1 of the story to work on a farm
-        private void FarmQuest()
+        public void FarmQuest()
         {
             Console.WriteLine("You took the farm quest from the board and went back to the reception desk.\n" +
                 "You:\n" +
@@ -196,7 +202,7 @@ namespace TextBase_Adventure
         }
 
         // Option 2 of the story to work on a construction site
-        private void ConstructionQuest()
+        public void ConstructionQuest()
         {
             Console.WriteLine("You took the farm quest from the board and went back to the reception desk.\n" +
                 "You:\n" +

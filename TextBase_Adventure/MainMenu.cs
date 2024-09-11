@@ -34,6 +34,8 @@ namespace TextBase_Adventure
                 int choice = InputCheckUtillity.AskInt("Voer een getal in om een keuze te maken.");
 
                 Console.Clear();
+                SaveReturnUtillity saveReturnUtillity = new SaveReturnUtillity();
+
                 switch (choice)
                 {
                     case 1:
@@ -41,10 +43,12 @@ namespace TextBase_Adventure
                         chapter1.Start();
                         break;
                     case 2:
-                        throw new NotImplementedException();
+                        saveReturnUtillity.GetSave();
                         break;
                     case 3:
-                        throw new NotImplementedException();
+                        saveReturnUtillity.GetAll();
+                        Console.WriteLine("Press enter to go back to the main menu.");
+                        Console.ReadLine();
                         break;
                     case 0:
                         run = false;
