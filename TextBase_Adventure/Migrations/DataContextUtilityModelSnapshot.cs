@@ -22,7 +22,21 @@ namespace TextBase_Adventure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Location")
+                    b.Property<int>("Coins")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("Health")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Points")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");

@@ -18,6 +18,7 @@ namespace TextBase_Adventure.Utility
             catch (Exception e)
             {
                 Console.WriteLine(e);
+
                 throw;
             }
         }

@@ -16,7 +16,11 @@ namespace TextBase_Adventure.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Location = table.Column<int>(type: "INTEGER", nullable: false)
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
+                    Health = table.Column<int>(type: "INTEGER", nullable: false),
+                    Location = table.Column<string>(type: "TEXT", nullable: false),
+                    Points = table.Column<int>(type: "INTEGER", nullable: false),
+                    Coins = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

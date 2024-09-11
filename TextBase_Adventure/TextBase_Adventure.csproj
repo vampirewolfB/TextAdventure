@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="MyDatabase.sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Figgle" Version="0.5.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.8" />
@@ -18,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="MyDatabase.sqlite">
+    <Resource Include="MyDatabase.sqlite">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Resource>
   </ItemGroup>
 
 </Project>
